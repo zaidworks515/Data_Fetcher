@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment Exercise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #007bff;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 70%; 
+        }
+
+        form {
+            width: 100%; 
+        }
+
+        .input-container {
+            text-align: left;
+            width:96.6%; 
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            
+            padding: 10px 20px;
+            cursor: pointer;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 16px;
+            color: #555;
+        }
+
+        p.error {
+            color: red;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        button.readme-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        button.readme-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Fetcher</h1>
+        <form method="POST">
+            <div class="input-container">
+                <label for="user_input">Enter your sentence:</label>
+                <input type="text" id="user_input" name="user_input" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        {% if error %}
+        <p class="error">{{ error }}</p>
+        {% endif %}
+        {% if response %}
+        <h2>Result:</h2>
+        <p>{{ response }}</p>
+        {% endif %}
+        <p>Click <a href="Readme.txt" target="_blank" id="readme_button">here</a> for application guidance</p>
+    </div>
+</body>
+</html>
 
