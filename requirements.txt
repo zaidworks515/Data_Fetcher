@@ -1,0 +1,10 @@
+openpyxl
+langchain[all]
+flask
+db-sqlite3
+openai
+pgvector
+psycopg2-binary
+tiktoken
+selenium
+
