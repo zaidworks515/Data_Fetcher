@@ -15,5 +15,5 @@ Note: Try to specify the table name somewhere in the sentence to get the accurat
 For example: Is there any Owner whose name is "Quaid-e-Azam"? 
 
 
+https://github.com/zaidworks515/Data_Fetcher/assets/121378158/d58fb669-01b3-4f47-80b8-3c36f62f86b8
 
-https://github.com/zaidworks515/Data_Fetcher/assets/121378158/89236fd0-eb2a-43ac-b8a0-8c24d046b2d2
